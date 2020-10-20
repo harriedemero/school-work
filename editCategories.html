@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Login Page</title>
+  <link rel="stylesheet" href="gallery.css">  
+
+  <script type="text/javascript">        
+  
+      function makeArray()
+      {
+      let listCat = document.getElementsByClassName("category");
+      for (i=0;i<listCat.length;i++)
+      {
+      console.log(listCat[i].innerHTML);
+      }
+      }
+      function addCategory()
+      {
+        catName = document.forms["newCat"]["newCatName"].value;
+        newName = catName.split(' ').join('');
+        idName = newName + "Name"
+        document.getElementById("newArea").innerHTML += "<div id=" + newName + " class=row><div id=" + idName + " class=\"column category\">" + catName + "</div><div class=column><a href = 'javascript:editCategory(&quot;" + idName + "&quot;)'>Edit</a></div><div class=column><a href = 'javascript:deleteCategory(&quot;" + newName + "&quot;)'>Delete</a></div>";
+        document.getElementById("addCat").value = "";
+      }
+      function deleteCategory(myCat)
+      {
+        document.getElementById(myCat).style.display='none';
+      }
+      function editCategory(editCat)
+      {
+        let oldName = document.getElementById(editCat).innerHTML;
+        let newName = prompt("Enter New Category Name", oldName);
+        if (newName== null) 
+        {
+          alert("Edit cancelled");
+          document.getElementById(editCat).innerHTML= oldName;
+
+        }
+        else if (/\s\s/.test(newName) || newName == " ")
+        {
+          alert("Blank names or multiple spaces are not allowed");
+        }
+        else
+        {
+           document.getElementById(editCat).innerHTML= newName;
+        }
+      }
+  </script>
+</head>
+
+<body class=admin>
+  <nav class="nav">
+    <div class="navImg">
+      <div class="navContainer">
+        <h1>The Artsy Shutter</h1>
+        <div class="navStyle">
+          <a href="home.html">Log Out</a>
+          <a href="photogallerydeletefunction.html">Edit Photos</a>
+          <a href="editCategories.html" class=active>Edit Categories</a>
+        </div>
+      </div>
+    </div>
+    </nav>
+<main class=mainAdmin>
+    <section class=admin>
+        <div class=row>
+        <h1>Categories</h1>
+        <b>Click edit to update a category name.
+          <br>Click delete to remove that category.
+        <br>Type a new category name and click submit to add a new category.</div>
+        <div id=dustin class=row>
+          <div class="column category" id=dustinName>Dustin's Photos</div>
+          <div class=column><a href = "javascript:editCategory('dustinName')">Edit</a></div>
+          <div class=column><a href = "javascript:deleteCategory('dustin')">Delete</a></div>
+        </div>
+        <div id=kp class=row>
+          <div class="column category" id=kpName>Ken's Photos</div>
+          <div class=column><a href = "javascript:editCategory('kpName')">Edit</a></div>
+          <div class=column><a href = "javascript:deleteCategory('kp')">Delete</a></div>
+        </div>
+        <div id=harriePhoto class=row>
+          <div class="column category" id=harrieName>Harrie's Photos</div>
+          <div class=column><a href = "javascript:editCategory('harrieName')">Edit</a></div>
+          <div class=column><a href = "javascript:deleteCategory('harriePhoto')">Delete</a></div>
+        </div>
+        <div id=rachPhoto class=row>
+          <div class="column category" id=rachName>Rachel's Photos</div>
+          <div class=column><a href = "javascript:editCategory('rachName')">Edit</a></div>
+          <div class=column><a href = "javascript:deleteCategory('rachPhoto')">Delete</a></div>
+        </div>
+        <div id=natPhoto class=row>
+          <div class="column category" id=natName>Nature Photos</div>
+          <div class=column><a href = "javascript:editCategory('natName')">Edit</a></div>
+          <div class=column><a href = "javascript:deleteCategory('natPhoto')">Delete</a></div>
+        </div>
+        <div id=archPhoto class=row>
+          <div class="column category" id=archName>Architecture Photos</div>
+          <div class=column><a href = "javascript:editCategory('natName')">Edit</a></div>
+          <div class=column><a href = "javascript:deleteCategory('archPhoto')">Delete</a></div>
+        </div>
+        <div id=newArea>
+        </div>
+        <div class=row>
+          <div style="margin-top: 20px;">
+            <form name=newCat>
+            <label for="addCat">Add Category</label> 
+            <input type="text" id=addCat name=newCatName>
+            <input type="button" id=addValue onclick="addCategory()" value="Submit">
+            </form>
+            </div>  
+        </div>
+    </section>
+</main>
+</body>
+</html>

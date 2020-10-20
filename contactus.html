@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="navImg">
+              <div class="navContainer">
+                <h1>The Artsy Shutter</h1>
+                <div class="navStyle">
+                  <a href="home.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="photogallery.html">Photo Gallery</a>
+                  <a class="active" href="contactus.html">Contact Us</a>
+                  <a href="adminLogin.html">Admin Login</a> 
+                </div>
+              </div>
+            </div>
+            </nav>
+        <section id="contactSect">
+		  <h1>Contact Us</h1>
+        <p><b>We are Group Three (fs1000-fall2020-group3), Dustin, Harrie, Ken and Rachel. If you like our photos or you would like to contact us, please use the form below.</b></p>
+		</section >
+        <section id="contactForm">           
+            <form action="action.php" method="post" target="_blank">
+            <input type="checkbox" name="contactus" id="Dustin">
+            <label for="Dustin"><b>Dustin</b></label>
+            <input type="checkbox" name="contactus" id="Harrie">
+            <label for="Harrie"><b>Harrie</b></label>
+            <input type="checkbox" name="contactus" id="Ken">
+            <label for="Ken"><b>Ken</b></label>
+            <input type="checkbox" name="contactus" id="Rachel">
+            <label for="Rachel"><b>Rachel</b></label>
+        </br></br>
+            <label for="firstName"><b>Your first name:</b></label>
+            </br>
+            <input type="text" name="firstName" id="firstName" required>
+        </br></br>
+            <label for="lastName"><b>Your last name:</b></label>
+            </br>
+            <input type="text" name="lastName" id="lastName" required>
+        </br></br>
+            <label for="email"><b>Your email address:</b></label>
+            </br>
+            <input type="email" id="email" required>
+        </br></br>
+            <label for="address"><b>Company or Organization:</b></label>
+            </br>
+            <textarea rows="3" cols="50" name="address" id="address"></textarea>
+        </br></br>
+           
+            <label for="comments"><b>What you want to say:</b></label>
+            </br>
+            <textarea rows="6" cols="50" name="comments" id="comments" required></textarea>
+        </br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+		</section>
+    </body>
+    </html>

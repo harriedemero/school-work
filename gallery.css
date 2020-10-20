@@ -1,0 +1,320 @@
+/*Nav bar style*/
+.nav {
+	overflow: hidden;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.navImg {
+	background-image: url("Images/webBanner3.png");
+	min-height: 80px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  position: relative;
+
+  overflow: hidden;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.navContainer {
+	position: relative;
+	width: 80%;
+  padding: 20px 6px 6px 6px;
+  margin-left: 20px;
+	}
+
+.navStyle {
+	overflow: hidden;
+	}
+
+.navStyle a {
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	padding: 8px 10px 5px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navStyle a:hover {
+	background-color: #ddd;
+  color: black;
+  /*padding: 10px 10px 10px 10px;*/
+}
+
+.contactImage {
+display:block;
+float: right;
+}
+
+nav .active {
+  color: black;
+	padding: 10px 5px 5px 5px;
+}
+
+/*Contact Page*/
+#contactForm {
+	background-color: #f6cabf;
+	width: 500px;
+	padding: 40px 120px 40px 50px;
+	margin-left:50px;
+}
+
+#contactSect {
+	padding-left:20px;
+}
+
+/* Here are some basic styles for things */
+body{
+  background-color:  #DF7861;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* If we want to control all fonts for the site except the Nav bar--change this setting  */
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-size: large;
+  }
+main {
+  text-align: center;
+  padding: 20px;
+  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  opacity: 0.2;
+}
+
+  span {
+    padding-left: 65px;
+  }
+  /* Styles below are for photo gallery and specific to it's function */
+  section[name="galleryMenu"]{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #dust {
+      display: none;
+  }
+  #ken {
+      display: none;
+  }
+  #rachel {
+    display: none;
+  }
+  #harrie {
+    display: none;
+  }
+  #nature {
+      display: none;
+  }
+  #architecture {
+    display: none;
+  }
+  /* Styles below are also from photo gallery but not related to category function */
+  img.gallery:hover {
+    transition: .3s ease;
+    opacity: 0.8;
+  }
+  img.gallery {
+    padding: 0px;
+    margin: 10px;
+    border-style: groove;
+    border-width: 1px;
+    border-color:#5B1606 ;
+  }
+  header[name="galleryMenu"]{
+    color: #260801;
+  }
+  ul[name="galleryMenu"]{
+    margin-left: 15%;
+    margin-right: 15%;
+    column-count: 2;
+    column-gap: 25px;
+    column-fill: balance;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 19px;
+  }
+  header [name="galleryMenu"] a {
+  color: #260801;
+  }
+
+  header a:hover {
+  background-color: #e3afa4;;
+  }
+
+  header .active {
+  background-color: #c7c7c7;
+  color: ghostwhite;
+  }
+
+/* Admin specific styles */
+
+
+.admin {
+  background-color: #5B1606;
+}
+.mainAdmin {
+    color: #e3afa4;
+  font-size: 20px;
+}
+.column {
+  float: left;
+  width: 33%;
+}
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+}
+section.admin {
+  background-color: #9B311A;
+  margin: 50px;
+  padding: 15px 0px;
+}
+section a {
+  color: #e3afa4;
+}
+
+section a:hover {
+  color: #ebdcd9;
+}
+.bottom-container{
+  background-color: #ce553a;
+  padding: 60px 0 40px;
+  text-align: center;
+}
+.footer-link{
+  position: relative;
+  font-size: 22px;
+  font-family: Sacramento;
+  color: #5B1606;
+  margin: 40px 40px;
+  text-decoration: none;
+}
+.copyright{
+  font-size: 12px;
+  font-family: Sacramento;
+  color: #5B1606;
+}
+.center {
+  display: block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  border: 0;
+  width: 100%;
+  opacity: 0.3;
+}
+.footer-link:hover {
+  color: #ffff;
+  text-decoration: none;
+}
+.container-background {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	color: black;
+}
+/*About Page*/
+.boxed {
+  border: 2px solid black ;
+  padding: 10px ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

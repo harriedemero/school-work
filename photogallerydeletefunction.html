@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script type="text/javascript">
+    // Reset and category functions added for photo gallery display
+    function reset() {
+      let reset = document.getElementsByName("gallery");
+      for (i = 0; i < reset.length; i++) {
+        reset[i].style.display = 'none';
+      }
+    }
+    function category(cat) {
+      let listImg = document.getElementById(cat);
+      listImg.style.display = 'block';
+    }
+
+
+    function HideContent(id) {
+      var x = document.getElementById(id);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+  </script>
+</head>
+
+<body class=admin>
+  <nav class="nav">
+    <div class="navImg">
+      <div class="navContainer">
+        <h1>The Artsy Shutter</h1>
+        <div class="navStyle">
+          <a href="home.html">Log Out</a>
+          <a href="photogallerydeletefunction.html" class=active>Edit Photos</a>
+          <a href="editCategories.html">Edit Categories</a>
+        </div>
+      </div>
+    </div>
+    </nav>
+  <main class=mainAdmin>
+    <section name=galleryMenu class=admin>
+      <header name=galleryMenu>
+        <h1>Photos</h1>
+        <b>Select a category to view, add, or edit the photos in that gallery. 
+          <br>Click on a photo to view it in a separate browser tab.
+          <br>Click "Delete" to remove a photo from that category.
+          <br>Click 'Choose File' to upload a new photo to the selected category.</b>
+          <form>
+            <br><input type="file" id="myFile" name="filename">
+            <input type="submit">
+            </form>
+        <ul name=galleryMenu>
+          <li><a href="javascript:void (0)" onclick="reset(), category('dust')">Dustin's photos</a><br></li>
+          <li><a href="javascript:void (0)" onclick="reset(), category('ken')">Ken's photos</a><br></li>
+          <li><a href="javascript:void (0)" onclick="reset(), category('rachel')">Rachel's photos</a><br></li>
+          <li><a href="javascript:void (0)" onclick="reset(), category('harrie')">Harrie's photos</a><br></li>
+          <li><a href="javascript:void (0)" onclick="reset(), category('nature')">Nature photos</a><br></li>
+          <li><a href="javascript:void (0)" onclick="reset(), category('architecture')">Architecture photos</a><br></li>
+        </ul>
+      </header>
+    </section>
+    
+    <section id=dust name=gallery>
+      <div id=Div1>
+        <a target="_blank" href="Images/seaBig.jpg">
+        <img class=gallery src="Images/seathumb.jpg" height="150" alt="The sea through a ruined window"></a>
+        <button onclick="HideContent('Div1')">Delete</button></div>
+      <div id=Div2>
+        <a target="_blank" href="Images/meteoraBig.jpg">
+        <img class=gallery class=gallery src="Images/meteoraThumb.jpg" height="150" alt="Meteora, Greece"></a>
+        <button onclick="HideContent('Div2')">Delete</button></div>
+      <div id=Div3>
+        <a target="_blank" href="Images/creteBig.jpg">
+        <img class=gallery class=gallery src="Images/creteThumb.jpg" height="150" alt="Beach on Crete"></a>
+        <button onclick="HideContent('Div3')">Delete</button></div>
+      <div id=Div4>
+        <a target="_blank" href="Images/delphiBig.jpg">
+        <img class=gallery class=gallery src="Images/delphiThumb.jpg" height="150" alt="Delphi, Greece"></a>
+        <button onclick="HideContent('Div4')">Delete</button></div>
+      <div id=Div5>
+        <a target="_blank" href="Images/kievBig.jpg">
+        <img class=gallery class=gallery src="Images/kievThumb.jpg" height="150" alt="St. Sophia's, Kiev"></a>
+        <button onclick="HideContent('Div5')">Delete</button></div>
+      <div id=Div6>
+        <a target="_blank" href="Images/parthenonBig.jpg">
+        <img class=gallery class=gallery src="Images/parthenonThumb.jpg" height="150" alt="Parthenon, Greece"></a>
+        <button onclick="HideContent('Div6')">Delete</button></div>
+      <div id=Div7>
+        <a target="_blank" href="Images/athensBig.jpg">
+        <img class=gallery class=gallery src="Images/athensThumb.jpg" height="150" alt="Athens, Greece"></a>
+        <button onclick="HideContent('Div7')">Delete</button></div>
+      <div id=Div8>
+        <a target="_blank" href="Images/budapestBig.jpg">
+        <img class=gallery src="Images/budapestThumb.jpg" height="150" alt="Budapest, Hungary"></a>
+        <button onclick="HideContent('Div8')">Delete</button></div>
+      <div id=Div9>
+        <a target="_blank" href="Images/chaniaNightBig.jpg">
+        <img class=gallery src="Images/chaniaNightThumb.jpg" height="150" alt="Chania at night"></a>
+        <button onclick="HideContent('Div9')">Delete</button></div>
+      <div id=Div10>
+        <a target="_blank" href="Images/chaniaBig.jpg">
+        <img class=gallery src="Images/chaniaThumb.jpg" height="150" alt="Chania, Crete, Greece"></a>
+        <button onclick="HideContent('Div10')">Delete</button></div>
+    </section>
+
+    <section id=ken name=gallery>
+      <div id=Div11>
+        <a target="_blank" href="Images/ken_photos/kp10_madeira_3_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp10_madeira_3_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div11')">Delete</button></div>
+      <div id=Div12>
+        <a target="_blank" href="Images/ken_photos/kp1_wawa_goose_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp1_wawa_goose_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div12')">Delete</button></div>
+      <div id=Div13>
+        <a target="_blank" href="Images/ken_photos/kp2_lake_superior_1_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp2_lake_superior_1_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div13')">Delete</button></div>
+      <div id=Div14>
+        <a target="_blank" href="Images/ken_photos/kp3_lake_superior_2_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp3_lake_superior_2_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div14')">Delete</button></div>
+      <div id=Div15>
+        <a target="_blank" href="Images/ken_photos/kp4_lake_superior_3_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp4_lake_superior_3_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div15')">Delete</button></div>
+      <div id=Div16>
+        <a target="_blank" href="Images/ken_photos/kp6_lake_superior_5_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp6_lake_superior_5_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div16')">Delete</button></div>
+     <div id=Div17>
+        <a target="_blank" href="Images/ken_photos/kp7_essaouira_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp7_essaouira_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div17')">Delete</button></div>
+      <div id=Div18>
+        <a target="_blank" href="Images/ken_photos/kp8_madeira_1_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp8_madeira_1_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div18')">Delete</button></div>
+      <div id=Div19>
+        <a target="_blank" href="Images/ken_photos/kp9_madeira_2_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp9_madeira_2_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div19')">Delete</button></div>
+      <div id=Div20>
+        <a target="_blank" href="Images/ken_photos/kp5_lake_superior_4_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp5_lake_superior_4_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div20')">Delete</button></div>
+    </section>
+
+    <section id=rachel name=gallery>
+      <div id=Div21>
+        <a target="_blank" href="Images/Rachel_photos/haleakala_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/haleakala_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div21')">Delete</button></div>
+      <div id=Div22>
+        <a target="_blank" href="Images/Rachel_photos/haleobservatory_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/haleobservatory_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div22')">Delete</button></div>
+      <div id=Div23>
+        <a target="_blank" href="Images/Rachel_photos/hawaii_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/hawaii_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div23')">Delete</button></div>
+      <div id=Div24>
+        <a target="_blank" href="Images/Rachel_photos/hilo_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/hilo_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div24')">Delete</button></div>
+      <div id=Div25>
+        <a target="_blank" href="Images/Rachel_photos/lightsfestival_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/lightsfestival_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div25')">Delete</button></div>
+      <div id=Div26>
+        <a target="_blank" href="Images/Rachel_photos/luau1_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/luau1_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div26')">Delete</button></div>
+      <div id=Div27>
+        <a target="_blank" href="Images/Rachel_photos/manitoulinisland_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/manitoulineisland_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div27')">Delete</button></div>
+      <div id=Div28>
+        <a target="_blank" href="Images/Rachel_photos/paintedchurch_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/paintedchurch_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div28')">Delete</button></div>
+      <div id=Div29>
+        <a target="_blank" href="Images/Rachel_photos/provincetown_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/provincetown_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div29')">Delete</button></div>
+      <div id=Div30>
+        <a target="_blank" href="Images/Rachel_photos/rainbowfalls_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/rainbowfalls_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div30')">Delete</button></div>
+     </section>
+
+    <section id=harrie name=gallery>
+      <div id=Div31>
+        <a target="_blank" href="Images/harrie_images/harrie_1.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_1_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div31')">Delete</button></div>
+      <div id=Div32>
+        <a target="_blank" href="Images/harrie_images/harrie_2.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_2_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div32')">Delete</button></div>
+      <div id=Div33>
+        <a target="_blank" href="Images/harrie_images/harrie_3.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_3_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div33')">Delete</button></div>
+      <div id=Div34>
+        <a target="_blank" href="Images/harrie_images/harrie_4.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_4_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div34')">Delete</button></div>
+      <div id=Div35>
+        <a target="_blank" href="Images/harrie_images/harrie_5.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_5_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div35')">Delete</button></div>
+      <div id=Div36>
+        <a target="_blank" href="Images/harrie_images/harrie_6.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_6_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div36')">Delete</button></div>
+      <div id=Div37>
+        <a target="_blank" href="Images/harrie_images/harrie_7.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_7_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div37')">Delete</button></div>
+      <div id=Div38>
+        <a target="_blank" href="Images/harrie_images/harrie_8.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_8_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div38')">Delete</button></div>
+      <div id=Div39>
+        <a target="_blank" href="Images/harrie_images/harrie_9.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_9_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div39')">Delete</button></div>
+      <div id=Div40>
+        <a target="_blank" href="Images/harrie_images/harrie_10.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_10_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div40')">Delete</button></div>
+    </section>
+
+    <section id=nature name=gallery>
+      <div id=Div41>
+      <a target="_blank" href="Images/meteoraBig.jpg">
+        <img class=gallery src="Images/meteoraThumb.jpg" height="150" alt="Meteora, Greece"></a>
+        <button onclick="HideContent('Div41')">Delete</button></div>
+     <div id=Div42>
+        <a target="_blank" href="Images/creteBig.jpg">
+        <img class=gallery src="Images/creteThumb.jpg" height="150" alt="Beach on Crete"></a>
+        <button onclick="HideContent('Div42')">Delete</button></div>
+      <div id=Div43>
+        <a target="_blank" href="Images/ken_photos/kp2_lake_superior_1_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp2_lake_superior_1_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div43')">Delete</button></div>
+      <div id=Div44>
+        <a target="_blank" href="Images/ken_photos/kp3_lake_superior_2_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp3_lake_superior_2_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div44')">Delete</button></div>
+      <div id=Div45>
+        <a target="_blank" href="Images/ken_photos/kp4_lake_superior_3_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp4_lake_superior_3_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div45')">Delete</button></div>
+      <div id=Div46>
+        <a target="_blank" href="Images/ken_photos/kp6_lake_superior_5_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp6_lake_superior_5_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div46')">Delete</button></div>
+      <div id=Div47>
+        <a target="_blank" href="Images/ken_photos/kp7_essaouira_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp7_essaouira_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div47')">Delete</button></div>
+      <div id=Div48>
+        <a target="_blank" href="Images/ken_photos/kp5_lake_superior_4_1500h.jpg">
+        <img class=gallery src="Images/ken_photos/kp5_lake_superior_4_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div48')">Delete</button></div>
+      <div id=Div49>
+        <a target="_blank" href="Images/Rachel_photos/haleakala_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/haleakala_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div49')">Delete</button></div>
+      <div id=Div50>
+        <a target="_blank" href="Images/Rachel_photos/haleobservatory_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/haleobservatory_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div50')">Delete</button></div>
+      <div id=Div51>
+        <a target="_blank" href="Images/Rachel_photos/hawaii_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/hawaii_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div51')">Delete</button></div>
+      <div id=Div52>
+        <a target="_blank" href="Images/Rachel_photos/hilo_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/hilo_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div52')">Delete</button></div>
+      <div id=Div53>
+        <a target="_blank" href="Images/Rachel_photos/rainbowfalls_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/rainbowfalls_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div53')">Delete</button></div>
+      <div id=Div54>
+        <a target="_blank" href="Images/harrie_images/harrie_1.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_1_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div54')">Delete</button></div>
+      <div id=Div55>
+        <a target="_blank" href="Images/harrie_images/harrie_3.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_3_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div55')">Delete</button></div>
+      <div id=Div56>
+        <a target="_blank" href="Images/harrie_images/harrie_4.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_4_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div56')">Delete</button></div>
+      <div id=Div57>
+        <a target="_blank" href="Images/harrie_images/harrie_5.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_5_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div57')">Delete</button></div>
+      <div id=Div58>
+        <a target="_blank" href="Images/harrie_images/harrie_7.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_7_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div58')">Delete</button></div>
+      <div id=Div59>
+        <a target="_blank" href="Images/harrie_images/harrie_8.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_8_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div59')">Delete</button></div>
+      <div id=Div60>
+        <a target="_blank" href="Images/harrie_images/harrie_10.jpg"></a>
+        <img class=gallery src="Images/harrie_images/harrie_10_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div60')">Delete</button></div>
+    </section>
+
+    <section id=architecture name=gallery>
+      <div id=Div61></div>
+      <a target="_blank" href="Images/seaBig.jpg">
+        <img class=gallery src="Images/seathumb.jpg" height="150" alt="The sea through a ruined window"></a>
+        <button onclick="HideContent('Div61')">Delete</button></div>
+      <div id=Div62>
+        <a target="_blank" href="Images/delphiBig.jpg">
+        <img class=gallery src="Images/delphiThumb.jpg" height="150" alt="Delphi, Greece"></a>
+        <button onclick="HideContent('Div62')">Delete</button></div>
+      <div id=Div63>
+        <a target="_blank" href="Images/kievBig.jpg">
+        <img class=gallery src="Images/kievThumb.jpg" height="150" alt="St. Sophia's, Kiev"></a>
+        <button onclick="HideContent('Div63')">Delete</button></div>
+      <div id=Div64>
+        <a target="_blank" href="Images/parthenonBig.jpg">
+        <img class=gallery src="Images/parthenonThumb.jpg" height="150" alt="Parthenon, Greece"></a>
+        <button onclick="HideContent('Div64')">Delete</button></div>
+      <div id=Div65>
+        <a target="_blank" href="Images/athensBig.jpg">
+        <img class=gallery src="Images/athensThumb.jpg" height="150" alt="Athens, Greece"></a>
+        <button onclick="HideContent('Div65')">Delete</button></div>
+      <div id=Div66>
+        <a target="_blank" href="Images/budapestBig.jpg">
+        <img class=gallery src="Images/budapestThumb.jpg" height="150" alt="Budapest, Hungary"></a>
+        <button onclick="HideContent('Div66')">Delete</button></div>
+      <div id=Div67>
+        <a target="_blank" href="Images/chaniaNightBig.jpg">
+        <img class=gallery src="Images/chaniaNightThumb.jpg" height="150" alt="Chania at night"></a>
+        <button onclick="HideContent('Div67')">Delete</button></div>
+      <div id=Div68>
+        <a target="_blank" href="Images/chaniaBig.jpg">
+        <img class=gallery src="Images/chaniaThumb.jpg" height="150" alt="Chania, Crete, Greece"></a>
+        <button onclick="HideContent('Div68')">Delete</button></div>
+      <div id=Div69>
+        <a target="_blank" href="Images/ken_photos/kp10_madeira_3_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp10_madeira_3_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div69')">Delete</button></div>
+      <div id=Div70>
+        <a target="_blank" href="Images/ken_photos/kp1_wawa_goose_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp1_wawa_goose_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div70')">Delete</button></div>
+      <div id=Div71>
+        <a target="_blank" href="Images/ken_photos/kp8_madeira_1_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp8_madeira_1_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div71')">Delete</button></div>
+      <div id=Div72>
+        <a target="_blank" href="Images/ken_photos/kp9_madeira_2_480h.jpg">
+        <img class=gallery src="Images/ken_photos/kp9_madeira_2_thumb_150h.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div72')">Delete</button></div>
+      <div id=Div73>
+        <a target="_blank" href="Images/Rachel_photos/paintedchurch_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/paintedchurch_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div73')">Delete</button></div>
+      <div id=Div74>
+        <a target="_blank" href="Images/Rachel_photos/provincetown_big.jpg">
+        <img class=gallery src="Images/Rachel_photos/provincetown_thumb.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div74')">Delete</button></div>
+      <div id=Div75>
+        <a target="_blank" href="Images/harrie_images/harrie_2.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_2_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div75')">Delete</button></div>
+      <div id=Div76>
+        <a target="_blank" href="Images/harrie_images/harrie_6.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_6_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div76')">Delete</button></div>
+      <div id=Div77>
+        <a target="_blank" href="Images/harrie_images/harrie_9.jpg">
+        <img class=gallery src="Images/harrie_images/harrie_9_thumbnail.jpg" height="150" alt=""></a>
+        <button onclick="HideContent('Div77')">Delete</button></div>
+
+    </section>
+  </main>
+
+</body>
+</html>

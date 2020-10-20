@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+        <script type="text/javascript">
+        // Reset and category functions added for photo gallery display
+            function reset()
+            {
+                let reset = document.getElementsByName("gallery")
+                for(i=0;i<reset.length;i++)
+                {
+                  reset[i].style.display = 'none';
+                }
+            }
+            function category(cat)
+            {
+                let listImg = document.getElementById(cat)
+                listImg.style.display = 'block';
+            }
+         </script>
+    </head>
+
+<body>
+  <style>
+    body{
+      background-image: url("Images/UX\ design\ 4.jpg");
+    }
+   </style>
+<nav class="nav">
+  <div class="navImg">
+    <div class="navContainer">
+      <h1>The Artsy Shutter</h1>
+      <div class="navStyle">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="photogallery.html">Photo Gallery</a>
+        <a href="contactus.html">Contact Us</a>
+      <a href="adminLogin.html">Admin Login</a>
+      </div>
+    </div>
+  </div>
+  </nav>
+        <main>
+          <section name=galleryMenu>
+            <header name=galleryMenu>
+            <b>Select a gallery to view.  Click on a photo to view it in a separate browser tab.</b>
+        <ul name=galleryMenu>
+          <li><a href = "javascript:void (0)" onclick="reset(), category('dust')">Dustin's photos</a><br></li>
+          <li><a href = "javascript:void (0)" onclick="reset(), category('ken')">Ken's photos</a><br></li>
+          <li><a href = "javascript:void (0)" onclick="reset(), category('rachel')">Rachel's photos</a><br></li>
+          <li><a href = "javascript:void (0)" onclick="reset(), category('harrie')">Harrie's photos</a><br></li>
+          <li><a href = "javascript:void (0)" onclick="reset(), category('nature')">Nature photos</a><br></li>
+          <li><a href = "javascript:void (0)" onclick="reset(), category('architecture')">Architecture photos</a><br></li>
+            </ul>
+          </header>
+          </section>
+        <section id=dust name=gallery>
+          <a target="_blank" href="Images/seaBig.jpg">
+            <img class=gallery src="Images/seathumb.jpg" height="150" alt="The sea through a ruined window"></a>
+          <a target="_blank" href="Images/meteoraBig.jpg">
+             <img class=gallery class=gallery src="Images/meteoraThumb.jpg" height="150" alt="Meteora, Greece"></a>
+          <a target="_blank" href="Images/creteBig.jpg">
+             <img class=gallery class=gallery src="Images/creteThumb.jpg" height="150" alt="Beach on Crete"></a>
+          <a target="_blank" href="Images/delphiBig.jpg">
+             <img class=gallery class=gallery src="Images/delphiThumb.jpg" height="150" alt="Delphi, Greece"></a>
+          <a target="_blank" href="Images/kievBig.jpg">
+             <img class=gallery class=gallery src="Images/kievThumb.jpg" height="150" alt="St. Sophia's, Kiev"></a>
+          <a target="_blank" href="Images/parthenonBig.jpg">
+             <img class=gallery class=gallery src="Images/parthenonThumb.jpg" height="150" alt="Parthenon, Greece"></a>
+          <a target="_blank" href="Images/athensBig.jpg">
+             <img class=gallery class=gallery src="Images/athensThumb.jpg" height="150" alt="Athens, Greece"></a>
+          <a target="_blank" href="Images/budapestBig.jpg">
+             <img class=gallery src="Images/budapestThumb.jpg" height="150" alt="Budapest, Hungary"></a>
+          <a target="_blank" href="Images/chaniaNightBig.jpg">
+             <img class=gallery src="Images/chaniaNightThumb.jpg" height="150" alt="Chania at night"></a>
+          <a target="_blank" href="Images/chaniaBig.jpg">
+             <img class=gallery src="Images/chaniaThumb.jpg" height="150" alt="Chania, Crete, Greece"></a>
+        </section>
+        <section id=ken name=gallery>
+          <a target="_blank" href="Images/ken_photos/kp10_madeira_3_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp10_madeira_3_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp1_wawa_goose_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp1_wawa_goose_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp2_lake_superior_1_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp2_lake_superior_1_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp3_lake_superior_2_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp3_lake_superior_2_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp4_lake_superior_3_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp4_lake_superior_3_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp6_lake_superior_5_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp6_lake_superior_5_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp7_essaouira_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp7_essaouira_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp8_madeira_1_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp8_madeira_1_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp9_madeira_2_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp9_madeira_2_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp5_lake_superior_4_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp5_lake_superior_4_thumb_150h.jpg" height="150"  alt=""></a>
+        </section>
+        <section id=rachel name=gallery>
+          <a target="_blank" href="Images/Rachel_photos/haleakala_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/haleakala_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/haleobservatory_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/haleobservatory_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/hawaii_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/hawaii_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/hilo_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/hilo_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/lightsfestival_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/lightsfestival_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/luau1_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/luau1_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/manitoulinisland_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/manitoulineisland_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/paintedchurch_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/paintedchurch_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/provincetown_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/provincetown_thumb.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/Rachel_photos/rainbowfalls_big.jpg">
+            <img class=gallery src="Images/Rachel_photos/rainbowfalls_thumb.jpg" height="150"  alt=""></a>
+        </section>
+        <section id=harrie name=gallery>
+          <a target="_blank" href="Images/harrie_images/harrie_1.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_1_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_2.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_2_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_3.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_3_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_4.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_4_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_5.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_5_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_6.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_6_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_7.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_7_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_8.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_8_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_9.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_9_thumbnail.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/harrie_images/harrie_10.jpg">
+            <img class=gallery src="Images/harrie_images/harrie_10_thumbnail.jpg" height="150"  alt=""></a>
+        </section>
+        <section id=nature name=gallery>
+          <a target="_blank" href="Images/meteoraBig.jpg">
+             <img class=gallery src="Images/meteoraThumb.jpg" height="150" alt="Meteora, Greece"></a>
+          <a target="_blank" href="Images/creteBig.jpg">
+             <img class=gallery src="Images/creteThumb.jpg" height="150" alt="Beach on Crete"></a>
+          <a target="_blank" href="Images/ken_photos/kp2_lake_superior_1_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp2_lake_superior_1_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp3_lake_superior_2_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp3_lake_superior_2_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp4_lake_superior_3_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp4_lake_superior_3_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp6_lake_superior_5_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp6_lake_superior_5_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp7_essaouira_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp7_essaouira_thumb_150h.jpg" height="150"  alt=""></a>
+           <a target="_blank" href="Images/ken_photos/kp5_lake_superior_4_1500h.jpg">
+            <img class=gallery src="Images/ken_photos/kp5_lake_superior_4_thumb_150h.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/haleakala_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/haleakala_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/haleobservatory_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/haleobservatory_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/hawaii_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/hawaii_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/hilo_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/hilo_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/rainbowfalls_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/rainbowfalls_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_1.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_1_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_3.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_3_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_4.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_4_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_5.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_5_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_7.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_7_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_8.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_8_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_10.jpg"></a>
+              <img class=gallery src="Images/harrie_images/harrie_10_thumbnail.jpg" height="150"  alt=""></a>
+        </section>
+        <section id=architecture name=gallery>
+          <a target="_blank" href="Images/seaBig.jpg">
+            <img class=gallery src="Images/seathumb.jpg" height="150" alt="The sea through a ruined window"></a>
+           <a target="_blank" href="Images/delphiBig.jpg">
+             <img class=gallery src="Images/delphiThumb.jpg" height="150" alt="Delphi, Greece"></a>
+          <a target="_blank" href="Images/kievBig.jpg">
+             <img class=gallery src="Images/kievThumb.jpg" height="150" alt="St. Sophia's, Kiev"></a>
+          <a target="_blank" href="Images/parthenonBig.jpg">
+             <img class=gallery src="Images/parthenonThumb.jpg" height="150" alt="Parthenon, Greece"></a>
+          <a target="_blank" href="Images/athensBig.jpg">
+             <img class=gallery src="Images/athensThumb.jpg" height="150" alt="Athens, Greece"></a>
+          <a target="_blank" href="Images/budapestBig.jpg">
+             <img class=gallery src="Images/budapestThumb.jpg" height="150" alt="Budapest, Hungary"></a>
+          <a target="_blank" href="Images/chaniaNightBig.jpg">
+             <img class=gallery src="Images/chaniaNightThumb.jpg" height="150" alt="Chania at night"></a>
+          <a target="_blank" href="Images/chaniaBig.jpg">
+             <img class=gallery src="Images/chaniaThumb.jpg" height="150" alt="Chania, Crete, Greece"></a>
+          <a target="_blank" href="Images/ken_photos/kp10_madeira_3_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp10_madeira_3_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp1_wawa_goose_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp1_wawa_goose_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp8_madeira_1_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp8_madeira_1_thumb_150h.jpg" height="150"  alt=""></a>
+          <a target="_blank" href="Images/ken_photos/kp9_madeira_2_480h.jpg">
+            <img class=gallery src="Images/ken_photos/kp9_madeira_2_thumb_150h.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/paintedchurch_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/paintedchurch_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/Rachel_photos/provincetown_big.jpg">
+              <img class=gallery src="Images/Rachel_photos/provincetown_thumb.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_2.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_2_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_6.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_6_thumbnail.jpg" height="150"  alt=""></a>
+            <a target="_blank" href="Images/harrie_images/harrie_9.jpg">
+              <img class=gallery src="Images/harrie_images/harrie_9_thumbnail.jpg" height="150"  alt=""></a>
+        </section>
+        </main>
+      </body>
+</html>
